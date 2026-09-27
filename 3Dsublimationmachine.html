@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<link rel="stylesheet" href="style.css">    
+
+<title>Document</title>
+
+</head>
+<body>
+
+   <!-- Main Bar --> 
+<div id="campaign-bar" class="fixed-top bg-secondary-subtle text-dark py-2 overflow-hidden" tabindex="0"> 
+    <div class="d-flex align-items-center position-relative"> 
+        <!-- The Moving "Train" --> 
+        <div class="marquee-content fw-bold text-dark"> 
+            <div class="marquee-item">🔥 For Mega Weekly Deals on Printers – Call or WhatsApp 07063636774</div> 
+            <div class="marquee-item">🚚 Free Shipping on Orders Above ₦500,000 – Within Lagos!</div> 
+            <div class="marquee-item">⚡ Get Latest Printers, Heat Machines, Cutting Plotters & DTF Machines, Unbeatable Prices!</div> 
+            <!-- DUPLICATE (Needed for seamless loop) --> 
+            <div class="marquee-item">🔥 For Mega Weekly Deals on Printers – Call or WhatsApp 07063636774</div> 
+            <div class="marquee-item">🚚 Free Shipping on Orders Above ₦500,000 – Within Lagos!</div> 
+            <div class="marquee-item">⚡ Get Latest Printers, Heat Machines, Cutting Plotters & DTF Machines, Unbeatable Prices!</div> 
+        </div>
+    </div>
+</div>
+
+     <!-- Navigation & Logo Section -->
+<div class="layout layout-sys3 layout-nav border-bottom shadow-sm bg-dark text-white">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+    
+    <!-- Left: Logo & Branding -->
+    <div class="left py-3">
+      <div class="top-logo">
+        <a href="/" title="InkTec Printing Solutions">
+          <img src="inktecleftlogo.png" width="200" height="auto" alt="InkTec Logo">
+        </a>
+      </div>
+    </div>
+
+    <!-- Center/Right: Navigation Links -->
+    <nav class="d-none d-md-flex align-items-center">
+      <a href="/" class="nav-link-custom text-white text-decoration-none mx-3">Home</a>
+      <a href="/about.html" class="nav-link-custom text-white text-decoration-none mx-3">About Us</a>
+      
+      <!-- Products Mega Dropdown -->
+      <div class="dropdown mx-3 position-static">
+        <a class="nav-link-custom text-white text-decoration-none dropdown-toggle" href="#" id="productDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Products
+        </a>
+        <div class="dropdown-menu dropdown-menu-dark w-100 shadow" aria-labelledby="productDropdown" style="margin-top: 0; border-radius: 0;">
+          <div class="container">
+            <div class="row py-4">
+              <!-- DTF Column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase text-info mb-3">DTF</h6>
+                <ul class="list-unstyled small">
+                  <li><a class="dropdown-item px-0" href="/dtfprinter.html">DTF printer</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/DTF-ink.htm">DTF ink</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/DTF-film.htm">DTF film</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/DTF-powder.htm">DTF powder</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/DTF-oven.htm">DTF oven</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/DTF-powder-shaker.htm">DTF powder shaker</a></li>
+                </ul>
+              </div>
+              <!-- Sublimation Column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase text-info mb-3">Sublimation</h6>
+                <ul class="list-unstyled small">
+                  <li><a class="dropdown-item px-0" href="/products/sublimation-printer.htm">Sublimation printer</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/sublimation-ink.htm">Sublimation ink</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/sublimation-paper.htm">Sublimation paper</a></li>
+                </ul>
+              </div>
+              <!-- UV Column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase text-info mb-3">UV</h6>
+                <ul class="list-unstyled small">
+                  <li><a class="dropdown-item px-0" href="/products/UV-printer.htm">UV printer</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/UV-DTF-printer.htm">UV DTF printer</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/UV-curable-ink.htm">UV curable ink</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/UV-DTF-AB-film.htm">UV DTF AB film</a></li>
+                </ul>
+              </div>
+              <!-- DTG Column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase text-info mb-3">DTG</h6>
+                <ul class="list-unstyled small">
+                  <li><a class="dropdown-item px-0" href="/products/DTG-printer.htm">DTG printer</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/DTG-ink.htm">DTG ink</a></li>
+                </ul>
+              </div>
+              <!-- Label Column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase text-info mb-3">Label</h6>
+                <ul class="list-unstyled small">
+                  <li><a class="dropdown-item px-0" href="/products/label-printer.htm">Label printer</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/label-paper.htm">Label paper</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/card-printer.htm">Card printer</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/PVC-card.htm">PVC card</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/weak-solvent-printer.htm">Weak-solvent printer</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="/shop.html" class="nav-link-custom text-white text-decoration-none mx-3">Shop</a>
+      <a href="/contact.html" class="nav-link-custom text-white text-decoration-none mx-3">Contact Us</a>
+    </nav>
+  
+  </div>
+</div>
+
+
+
+<div class="product-container">
+    <!-- Left Side: Responsive Gallery (No Zoom) -->
+    <div class="product-gallery">
+        <div class="img-display-container">
+            <!-- Main Image -->
+            <img id="main-dtf" src="3d sublimation side 1.jpg" alt="3D Sublimation Machine" style="width: 100%; display: block;">
+        </div>
+        
+        <div class="thumbnails-list">
+            <img src="3d sublimation side 1.jpg" class="active-thumb" onclick="changePreview(this, 'main-dtf')" alt="View 1">
+            <img src="3d sublimation side 03.jpg" onclick="changePreview(this, 'main-dtf')" alt="View 2">
+            <img src="3d sublimation side 2.jpg" onclick="changePreview(this, 'main-dtf')" alt="View 3">
+            <img src="3d sublimation side 4.jpg" onclick="changePreview(this, 'main-dtf')" alt="View 4">
+            <img src="3d sublimation side 3.jpg" onclick="changePreview(this, 'main-dtf')" alt="View 5">
+        </div>
+    </div>
+
+    <!-- Right Side: Product Details -->
+    <div class="product-summary">
+        <div class="meta">Brand: <span class="brand-name">3D Sublimation Machine</span></div>
+        <h1 class="product-title">3D Sublimation Machine</h1>
+        
+        <div class="price-box">
+            <p class="price">
+                <span class="currency">₦</span>370,000.00
+                <span class="sale-tag">NEW ARRIVAL</span>
+            </p>
+        </div>
+
+        <div class="short-description">
+            <ul>
+                <li>Easy to use and to operate</li>
+                <li>3-step temperature level</li>
+                <li>Static state for 10 minutes with automatic shut-off</li>
+                <li>Compact and portable</li>
+            </ul>
+        </div>
+
+        <div class="cart-actions">
+            <div class="quantity-selector">
+                <button type="button" onclick="qtyUpdate(-1)">-</button>
+                <input type="number" id="qty" value="1" min="1">
+                <button type="button" onclick="qtyUpdate(1)">+</button>
+            </div>
+            <button class="buy-now-btn">Buy It Now</button>
+        </div>
+    </div>
+</div>
+
+<!-- Tabs Section -->
+<div class="tabs-container">
+    <div class="tabs-header">
+        <button class="tab-link active" onclick="openTab(event, 'description')">Description</button>
+        <button class="tab-link" onclick="openTab(event, 'info')">Additional Information</button>
+        <button class="tab-link" onclick="openTab(event, 'reviews')">Reviews (0)</button>
+    </div>
+
+    <div id="description" class="tab-content active">
+        <h2>Description</h2>
+        <p>Experience high precision with the <strong>8-in-1 Combo Heat Transfer Machine</strong>. Model 8 in 1 Combo is a versatile heat press machine designed for various applications, including T-shirt print transfer, cap transfer, plate transfer, mug transfer, and more. With a working power of 220v/110 v and a temprature raging from 0-220 Degree Celsus. 
+Capacity 8 in 1 Combo
+Automatic Grade Semi-Automatic, Manual
+Working power 220v/110 V, 3 KW
+Temperature 0-220 Degree C
+Minimum Order Quantity 1
+
+ 
+
+Our respectable clients can avail a wide range of Heat Press Machine. The offered One Heat Press Machine is available in different specifications. Our heat press machine is provided in customized according to the information detailed by our respectable patrons.
+
+Features:
+
+Hassle free working
+
+High accuracy & efficiency
+
+Noise free operation</p>
+    </div>
+
+    <div id="info" class="tab-content">
+        <h2>Additional Information</h2>
+        <table class="info-table">
+            <tr><th>Weight</th><td>2.00 kg/ 700 g</td></tr>
+            <tr><th>Width</th><td>38 by 38cm </td></tr>
+            <tr><th>Compatible</th><td>T-Shirt, Caps, Bags etc</td></tr>
+        </table>
+    </div>
+
+    <div id="reviews" class="tab-content">
+        <h2>Reviews</h2>
+        <p>There are no reviews yet.</p>
+    </div>
+</div>
+
+
+<!-- Similar Items Section -->
+<div class="container my-5 px-4">
+    <div class="similar-header-wrapper mb-4">
+        <div class="productOffers_productOffersHeader__A8X6U">Similar Items You May Like</div>
+    </div>
+    
+    <div class="row g-3 g-md-4">
+        <!-- Item 1: Combo Press -->
+        <div class="col-6 col-md-3">
+            <div class="card h-100 border-0 shadow-sm inktec-card">
+                <a href="/products/8-in-1-combo-press.html" class="text-decoration-none text-dark">
+                    <div class="card-img-wrapper p-3">
+                        <img src="new8in1heatpress.jpg" class="card-img-top" alt="Combo Heat Press">
+                    </div>
+                    <div class="card-body text-center pt-0">
+                        <h6 class="card-title small fw-bold">8-in-1 Combo Heat Press Machine</h6>
+                        <p class="text-info fw-bold mb-2">₦175,000</p>
+                        <span class="btn btn-sm btn-info text-white w-100 py-2">View Product</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Item 2: Mug Press -->
+        <div class="col-6 col-md-3">
+            <div class="card h-100 border-0 shadow-sm inktec-card">
+                <a href="/products/mug-press.html" class="text-decoration-none text-dark">
+                    <div class="card-img-wrapper p-3">
+                        <img src="2in1 mugpress.jpg" class="card-img-top" alt="Mug Press">
+                    </div>
+                    <div class="card-body text-center pt-0">
+                        <h6 class="card-title small fw-bold">Digital Sublimation Mug Press</h6>
+                        <p class="text-info fw-bold mb-2">₦35,000</p>
+                        <span class="btn btn-sm btn-info text-white w-100 py-2">View Product</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Item 3: Cap Press -->
+        <div class="col-6 col-md-3">
+            <div class="card h-100 border-0 shadow-sm inktec-card">
+                <a href="/products/cap-press.html" class="text-decoration-none text-dark">
+                    <div class="card-img-wrapper p-3">
+                        <img src="2in1 cappress.jpg" class="card-img-top" alt="Cap Press">
+                    </div>
+                    <div class="card-body text-center pt-0">
+                        <h6 class="card-title small fw-bold">Professional Cap Heat Press</h6>
+                        <p class="text-info fw-bold mb-2">₦48,000</p>
+                        <span class="btn btn-sm btn-info text-white w-100 py-2">View Product</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Item 4: Large Flat Press -->
+        <div class="col-6 col-md-3">
+            <div class="card h-100 border-0 shadow-sm inktec-card">
+                <a href="/products/flat-press-38x38.html" class="text-decoration-none text-dark">
+                    <div class="card-img-wrapper p-3">
+                        <img src="T-shirt press machine16 by 24.avif" class="card-img-top" alt="Flat Press">
+                    </div>
+                    <div class="card-body text-center pt-0">
+                        <h6 class="card-title small fw-bold">High-Pressure Flat Press 38x38</h6>
+                        <p class="text-info fw-bold mb-2">₦120,000</p>
+                        <span class="btn btn-sm btn-info text-white w-100 py-2">View Product</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 5. FOOTER SECTION (Black & Branded) -->
+<footer class="inktec-footer bg-dark text-white pt-5 pb-3">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Support -->
+            <div class="col-md-4">
+                <h3 class="footer-heading text-info">Support & Socials</h3>
+                <p class="small mb-1"><strong>Email:</strong> <a href="mailto:inkteknigeria@gmail.com" class="text-white-50 text-decoration-none">inkteknigeria@gmail.com</a></p>
+                <p class="small"><strong>Phone:</strong> <br>
+                    <a href="tel:+2347063636774" class="text-white-50 text-decoration-none">0706 363 6774</a>, 
+                    <a href="tel:+2349133004777" class="text-white-50 text-decoration-none">0913 300 4777</a>
+                </p>
+                <div class="d-flex gap-2 mt-3">
+                    <a href="#" class="btn btn-sm btn-outline-light rounded-circle">FB</a>
+                    <a href="https://wa.me" class="btn btn-sm btn-outline-success rounded-circle">WA</a>
+                </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="col-md-4">
+                <h3 class="footer-heading text-info">Newsletter</h3>
+                <p class="small text-white-50">Subscribe for exclusive deals on DTF machines.</p>
+                <form class="d-flex gap-2">
+                    <input type="email" class="form-control form-control-sm bg-secondary text-white border-0" placeholder="Email address">
+                    <button class="btn btn-sm btn-info text-white fw-bold">Join</button>
+                </form>
+            </div>
+
+            <!-- Location -->
+            <div class="col-md-4">
+                <h3 class="footer-heading text-info">Find Us</h3>
+                <p class="small text-white-50">17 Bashiru Oweh St, Computer Village, Ikeja, Lagos.</p>
+                <a href="https://google.com" target="_blank" class="btn btn-sm btn-outline-info w-100 py-2">
+                    📍 OPEN IN GOOGLE MAPS
+                </a>
+            </div>
+        </div>
+        <hr class="border-secondary mt-5">
+        <p class="text-center small text-white-50 mb-0">© 2024 InkTec Printing Solutions. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script>
+    // 1. PREVIEW SWAP LOGIC (Simple source swap)
+    function changePreview(thumbnail, targetId) {
+        const mainImg = document.getElementById(targetId);
+        mainImg.src = thumbnail.src;
+        
+        // Update active class for thumbnails
+        const thumbs = thumbnail.parentElement.querySelectorAll('img');
+        thumbs.forEach(img => img.classList.remove('active-thumb'));
+        thumbnail.classList.add('active-thumb');
+    }
+
+    // 2. QUANTITY UPDATER
+    function qtyUpdate(change) {
+        const input = document.getElementById('qty');
+        let val = parseInt(input.value) + change;
+        input.value = val < 1 ? 1 : val;
+    }
+
+    // 3. TAB LOGIC
+    function openTab(evt, tabId) {
+        const contents = document.getElementsByClassName("tab-content");
+        for (let content of contents) content.classList.remove("active");
+        
+        const links = document.getElementsByClassName("tab-link");
+        for (let link of links) link.classList.remove("active");
+        
+        document.getElementById(tabId).classList.add("active");
+        evt.currentTarget.classList.add("active");
+    }
+</script>

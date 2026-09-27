@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<link rel="stylesheet" href="style.css">    
+
+<title>Document</title>
+
+</head>
+<body>
+
+   <!-- Main Bar --> 
+<div id="campaign-bar" class="fixed-top bg-secondary-subtle text-dark py-2 overflow-hidden" tabindex="0"> 
+    <div class="d-flex align-items-center position-relative"> 
+        <!-- The Moving "Train" --> 
+        <div class="marquee-content fw-bold text-dark"> 
+            <div class="marquee-item">🔥 Mega Weekly Deals on Printers – Shop Now & Save Big!</div> 
+            <div class="marquee-item">🚚 Free Shipping on Orders Above ₦500,000 – Within Lagos!</div> 
+            <div class="marquee-item">⚡ Get Latest Printers, Heat Machines, Cutting Plotters & DTF Machines, Unbeatable Prices!</div> 
+            <!-- DUPLICATE (Needed for seamless loop) --> 
+            <div class="marquee-item">🔥 Mega Weekly Deals on High Quality Printers – Shop Now & Save Big!</div> 
+            <div class="marquee-item">🚚 Free Shipping on Orders Above ₦500,000 – Within Lagos!</div> 
+            <div class="marquee-item">⚡ Get Latest Printers, Heat Machines, Cutting Plotters & DTF Machines, Unbeatable Prices!</div> 
+        </div>
+    </div>
+</div>
+
+     <!-- Navigation & Logo Section -->
+<div class="layout layout-sys3 layout-nav border-bottom shadow-sm bg-dark text-white">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+    
+    <!-- Left: Logo & Branding -->
+    <div class="left py-3">
+      <div class="top-logo">
+        <a href="/" title="InkTec Printing Solutions">
+          <img src="inktecleftlogo.png" width="200" height="auto" alt="InkTec Logo">
+        </a>
+      </div>
+    </div>
+
+    <!-- Center/Right: Navigation Links -->
+    <nav class="d-none d-md-flex align-items-center">
+      <a href="/" class="nav-link-custom text-white text-decoration-none mx-3">Home</a>
+      <a href="/about.html" class="nav-link-custom text-white text-decoration-none mx-3">About Us</a>
+      
+      <!-- Products Mega Dropdown -->
+      <div class="dropdown mx-3 position-static">
+        <a class="nav-link-custom text-white text-decoration-none dropdown-toggle" href="#" id="productDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Products
+        </a>
+        <div class="dropdown-menu dropdown-menu-dark w-100 shadow" aria-labelledby="productDropdown" style="margin-top: 0; border-radius: 0;">
+          <div class="container">
+            <div class="row py-4">
+              <!-- DTF Column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase text-info mb-3">DTF</h6>
+                <ul class="list-unstyled small">
+                  <li><a class="dropdown-item px-0" href="/dtfprinter.html">DTF printer</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/DTF-ink.htm">DTF ink</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/DTF-film.htm">DTF film</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/DTF-powder.htm">DTF powder</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/DTF-oven.htm">DTF oven</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/DTF-powder-shaker.htm">DTF powder shaker</a></li>
+                </ul>
+              </div>
+              <!-- Sublimation Column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase text-info mb-3">Sublimation</h6>
+                <ul class="list-unstyled small">
+                  <li><a class="dropdown-item px-0" href="/products/sublimation-printer.htm">Sublimation printer</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/sublimation-ink.htm">Sublimation ink</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/sublimation-paper.htm">Sublimation paper</a></li>
+                </ul>
+              </div>
+              <!-- UV Column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase text-info mb-3">UV</h6>
+                <ul class="list-unstyled small">
+                  <li><a class="dropdown-item px-0" href="/products/UV-printer.htm">UV printer</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/UV-DTF-printer.htm">UV DTF printer</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/UV-curable-ink.htm">UV curable ink</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/UV-DTF-AB-film.htm">UV DTF AB film</a></li>
+                </ul>
+              </div>
+              <!-- DTG Column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase text-info mb-3">DTG</h6>
+                <ul class="list-unstyled small">
+                  <li><a class="dropdown-item px-0" href="/products/DTG-printer.htm">DTG printer</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/DTG-ink.htm">DTG ink</a></li>
+                </ul>
+              </div>
+              <!-- Label Column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase text-info mb-3">Label</h6>
+                <ul class="list-unstyled small">
+                  <li><a class="dropdown-item px-0" href="/products/label-printer.htm">Label printer</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/label-paper.htm">Label paper</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/card-printer.htm">Card printer</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/PVC-card.htm">PVC card</a></li>
+                  <li><a class="dropdown-item px-0" href="/products/weak-solvent-printer.htm">Weak-solvent printer</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="/shop.html" class="nav-link-custom text-white text-decoration-none mx-3">Shop</a>
+      <a href="/contact.html" class="nav-link-custom text-white text-decoration-none mx-3">Contact Us</a>
+    </nav>
+  
+  </div>
+</div>
+
+<!-- Main Product Grid -->
+<div class="mod-content mod-content-othercontent">
+    <div class="content-bg-othercontent">
+        
+        <!-- Item 1: DTF -->
+        <div class="item">
+            <div class="img"><a href="/products/uv" style="display: contents;"> <img src="dtfprinternew.jpg" alt="Consumables"> </a></div>
+            <div class="text">
+                <h3>DTF Printing Full Range</h3>
+                <p class="price" style="color: #034EA2; font-weight: bold; font-size: 1.2rem; margin-bottom: 5px;">Price ₦4,500,000</p>
+                <p>High precision printing comparable to professional standards. High-speed, stable, and customizable for industrial integration.</p>
+                <a href="/products/dtf">Buy Now</a>
+            </div>
+        </div>
+
+        <!-- Item 2: DTF SHAKING POWDER -->
+        <div class="item">
+            <div class="img"><a href="/products/uv" style="display: contents;"> <img src="newdtfbig.avif" alt="Consumables"> </a></div>
+            <div class="text">
+                <h3>DTF Shaking Powder</h3>
+                <p class="price" style="color: #034EA2; font-weight: bold; font-size: 1.2rem; margin-bottom: 5px;">Price ₦3,200,000</p>
+                <p>Equipped with high-speed printheads for stable continuous operation and true color reproduction.</p>
+                <a href="/products/sublimation">Buy Now</a>
+            </div>
+        </div>
+
+        <!-- Item 3: UV/UV DTF -->
+        <div class="item">
+            <div class="img"><a href="/products/uv" style="display: contents;"> <img src="newdtfextra.jpg" alt="Consumables"> </a></div>
+            <div class="text">
+                <h3>UV / UV DTF Systems</h3>
+                <p class="price" style="color: #034EA2; font-weight: bold; font-size: 1.2rem; margin-bottom: 5px;">Price ₦5,800,000</p>
+                <p>Vacuum suction platforms and silent guideways. Delivers vivid colors and impressive 3D textured effects.</p>
+                <a href="/products/uv">Buy Now</a>
+            </div>
+        </div>
+
+        <!-- Item 4: DTG -->
+        <div class="item">
+            <div class="img"><a href="/products/uv" style="display: contents;"> <img src="newdtflarge.jpg" alt="Consumables"> </a></div>
+            <div class="text">
+                <h3>DTG Textile Solutions</h3>
+                <p class="price" style="color: #034EA2; font-weight: bold; font-size: 1.2rem; margin-bottom: 5px;">Price ₦4,100,000</p>
+                <p>Direct-to-garment printers that restore true color and create exquisite, durable printed textiles.</p>
+                <a href="/products/dtg">Buy Now</a>
+            </div>
+        </div>
+
+        <!-- Item 5: Labels -->
+        <div class="item">
+            <div class="img"><a href="/products/uv" style="display: contents;"> <img src="monogram.jpeg" alt="Consumables"> </a></div>
+            <div class="text">
+                <h3>2 Head Monogram Machine</h3>
+                <p class="price" style="color: #034EA2; font-weight: bold; font-size: 1.2rem; margin-bottom: 5px;">Price ₦6,850,000</p>
+                <p>High-speed printing with integrated cutters and intelligent touch panels for streamlined operation.</p>
+                <a href="/products/label">Buy Now</a>
+            </div>
+        </div>
+
+        <!-- Item 6: SHAKERS (POWDER & DRYER) -->
+        <div class="item">
+            <div class="img"><a href="/products/uv" style="display: contents;"> <img src="shaker (powder & dryer).png" alt="Consumables"> </a></div>
+            <div class="text">
+                <h3>DTF Shaker (Powder & Dryer)</h3>
+                <p class="price" style="color: #034EA2; font-weight: bold; font-size: 1.2rem; margin-bottom: 5px;">Price ₦1,200,000</p>
+                <p>A2/60 cm → larger capacity, higher speed → compact & space-saving Automatic powder coating + curing best solution for continuous production</p>
+                <a href="/products/label">Buy Now</a>
+            </div>
+        </div>
+
+        
+
+        <!-- Item 7: Consumables -->
+        <div class="item">
+            <div class="img"><a href="/products/uv" style="display: contents;"> <img src="singleheadmonogram.jpg" alt="Consumables"> </a></div>
+            <div class="text">
+                <h3>Single Head Monogram Machine</h3>
+                <p class="price" style="color: #034EA2; font-weight: bold; font-size: 1.2rem; margin-bottom: 5px;">Price ₦4,750,000</p>
+                <p>A wide range of premium inks and media formats customized to meet professional printing needs.</p>
+                <a href="/products/consumables">Buy Now</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div class="product-container">
+    <!-- Left Side: Responsive Gallery (No Zoom) -->
+    <div class="product-gallery">
+        <div class="img-display-container">
+            <!-- Main Image -->
+            <img id="main-dtf" src="dtfprinternew.jpg" alt="DTF Printing Full Range" style="width: 100%; display: block;">
+        </div>
+        
+        <div class="thumbnails-list">
+            <img src="dtfprinternew.jpg" class="active-thumb" onclick="changePreview(this, 'main-dtf')" alt="View 1">
+            <img src="dtf2.jpg" onclick="changePreview(this, 'main-dtf')" alt="View 2">
+            <img src="dtf4.jpg" onclick="changePreview(this, 'main-dtf')" alt="View 3">
+            <img src="dtf4.jpg" onclick="changePreview(this, 'main-dtf')" alt="View 4">
+            <img src="dtf4.jpg" onclick="changePreview(this, 'main-dtf')" alt="View 5">
+        </div>
+    </div>
+
+    <!-- Right Side: Product Details -->
+    <div class="product-summary">
+        <div class="meta">Brand: <span class="brand-name">DTF PRO</span></div>
+        <h1 class="product-title">DTF Printing Full Range</h1>
+        
+        <div class="price-box">
+            <p class="price">
+                <span class="currency">₦</span>4,500,000
+                <span class="sale-tag">NEW ARRIVAL</span>
+            </p>
+        </div>
+
+        <div class="short-description">
+            <ul>
+                <li>High precision industrial heads</li>
+                <li>Quantum-stable ink flow</li>
+                <li>High-speed production mode</li>
+                <li>Smart-control interface</li>
+            </ul>
+        </div>
+
+        <div class="cart-actions">
+            <div class="quantity-selector">
+                <button type="button" onclick="qtyUpdate(-1)">-</button>
+                <input type="number" id="qty" value="1" min="1">
+                <button type="button" onclick="qtyUpdate(1)">+</button>
+            </div>
+            <button class="buy-now-btn">Buy It Now</button>
+        </div>
+    </div>
+</div>
+
+<section class="product-benefits">
+    <div class="container product-benefits-inner">
+        <div class="benefit-box">
+            <h3>Why buyers choose this setup</h3>
+            <ul>
+                <li>High-speed production for daily printing work</li>
+                <li>Stable output with better color control</li>
+                <li>Built for business owners and printing shops</li>
+                <li>Reliable support and guidance from InkTek</li>
+            </ul>
+        </div>
+        <div class="benefit-box benefit-box-accent">
+            <h3>Need the right package?</h3>
+            <p>Tell us your production level and we’ll recommend the correct DTF system, powder setup, and consumables.</p>
+            <div class="mini-cta-row">
+                <a href="tel:+2347063636774" class="mini-cta primary">Call us</a>
+                <a href="https://wa.me/2347063636774?text=Hello%20InkTek%2C%20I%20want%20to%20enquire%20about%20the%20DTF%20printer." class="mini-cta secondary" target="_blank" rel="noreferrer">WhatsApp</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tabs Section -->
+<div class="tabs-container">
+    <div class="tabs-header">
+        <button class="tab-link active" onclick="openTab(event, 'description')">Description</button>
+        <button class="tab-link" onclick="openTab(event, 'info')">Additional Information</button>
+        <button class="tab-link" onclick="openTab(event, 'reviews')">Reviews (0)</button>
+    </div>
+
+    <div id="description" class="tab-content active">
+        <h2>Description</h2>
+        <p>Experience high precision printing with the <strong>DTF Printing Full Range</strong>. Designed for industrial stability, this printer offers vibrant colors and high-speed production.</p>
+        <p>It is suitable for entrepreneurs, apparel businesses, custom print shops, and companies looking for a dependable transfer printing system with strong visual results.</p>
+    </div>
+
+    <div id="info" class="tab-content">
+        <h2>Additional Information</h2>
+        <table class="info-table">
+            <tr><th>Weight</th><td>120 kg</td></tr>
+            <tr><th>Print Width</th><td>60cm / 24inch</td></tr>
+            <tr><th>Compatible Ink</th><td>DTF Premium Pigment Ink</td></tr>
+            <tr><th>Recommended Use</th><td>Apparel, custom prints, textile transfer business</td></tr>
+        </table>
+    </div>
+
+    <div id="reviews" class="tab-content">
+        <h2>Reviews</h2>
+        <p>There are no reviews yet.</p>
+    </div>
+</div>
+
+<section class="similar-products">
+    <div class="container">
+        <div class="similar-header-wrapper">
+            <h2 class="productOffers_productOffersHeader__A8X6U">You may also like</h2>
+        </div>
+        <div class="similar-grid">
+            <div class="inktec-card similar-card">
+                <img src="A2 DTF printer side 3.png" alt="A2 DTF printer">
+                <div class="similar-card-body">
+                    <h3>A2 DTF Printer</h3>
+                    <p>Large format setup for higher output and wider prints.</p>
+                    <a href="a2dtfprinter.html">View product</a>
+                </div>
+            </div>
+            <div class="inktec-card similar-card">
+                <img src="curringoven A2 side 01.avif" alt="DTF curing oven">
+                <div class="similar-card-body">
+                    <h3>DTF Curing Oven</h3>
+                    <p>Fast curing support for efficient daily production.</p>
+                    <a href="index.html#featured-products">View product</a>
+                </div>
+            </div>
+            <div class="inktec-card similar-card">
+                <img src="heatpress 38by38 side 1.jpg" alt="Heat press machine">
+                <div class="similar-card-body">
+                    <h3>Heat Press Machine</h3>
+                    <p>Reliable everyday heat transfer solution for apparel brands.</p>
+                    <a href="heattransfermachine38cm.html">View product</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // 1. PREVIEW SWAP LOGIC (Simple source swap)
+    function changePreview(thumbnail, targetId) {
+        const mainImg = document.getElementById(targetId);
+        mainImg.src = thumbnail.src;
+        
+        // Update active class for thumbnails
+        const thumbs = thumbnail.parentElement.querySelectorAll('img');
+        thumbs.forEach(img => img.classList.remove('active-thumb'));
+        thumbnail.classList.add('active-thumb');
+    }
+
+    // 2. QUANTITY UPDATER
+    function qtyUpdate(change) {
+        const input = document.getElementById('qty');
+        let val = parseInt(input.value) + change;
+        input.value = val < 1 ? 1 : val;
+    }
+
+    // 3. TAB LOGIC
+    function openTab(evt, tabId) {
+        const contents = document.getElementsByClassName("tab-content");
+        for (let content of contents) content.classList.remove("active");
+        
+        const links = document.getElementsByClassName("tab-link");
+        for (let link of links) link.classList.remove("active");
+        
+        document.getElementById(tabId).classList.add("active");
+        evt.currentTarget.classList.add("active");
+    }
+</script>
